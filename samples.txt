@@ -1,0 +1,130 @@
+# Import numpy
+import numpy as np
+
+# Calculate the BMI: bmi
+np_height_m = np.array(height) * 0.0254
+np_weight_kg = np.array(weight) * 0.453592
+bmi = np_weight_kg / np_height_m ** 2
+
+# Create the light array
+light = bmi < 21
+
+# Print out light
+print(light)
+================================================
+# Print out BMIs of all baseball players whose BMI is below 21
+print(bmi[light])
+
+# baseball is available as a regular list of lists
+
+# Import numpy package
+import numpy as np
+
+# Create np_baseball (2 cols)
+np_baseball = np.array(baseball)
+
+# Print out the 50th row of np_baseball
+print(np_baseball[49,:])
+
+# Select the entire second column of np_baseball: np_weight
+np_weight = np_baseball[:,1]
+
+# Print out height of 124th player
+print(np_baseball[123, 0])
+===========================================================
+# Print the last item from year and pop
+print(year[-1])
+print(pop[-1])
+
+# Import matplotlib.pyplot as plt
+import matplotlib.pyplot as plt
+
+# Make a line plot: year on the x-axis, pop on the y-axis
+plt.plot(year, pop)
+
+# Display the plot with plt.show()
+plt.show()
+=====================================================
+# Change the line plot below to a scatter plot
+plt.plot(gdp_cap, life_exp)
+
+# Put the x-axis on a logarithmic scale
+plt.xscale('log')
+
+# Show plot
+plt.show()
+========================================================
+# Build histogram with 5 bins
+plt.hist(life_exp, bins=5)
+
+# Show and clean up plot
+plt.show()
+plt.clf()
+
+# Build histogram with 20 bins
+plt.hist(life_exp, bins=20)
+
+# Show and clean up again
+plt.show()
+plt.clf()
+==============================================================
+# Basic scatter plot, log scale
+plt.scatter(gdp_cap, life_exp)
+plt.xscale('log')
+
+# Strings
+xlab = 'GDP per Capita [in USD]'
+ylab = 'Life Expectancy [in years]'
+title = 'World Development in 2007'
+
+# Add axis labels
+plt.xlabel(xlab)
+plt.ylabel(ylab)
+
+# Add title
+plt.title(title)
+
+
+# After customizing, display the plot
+plt.show()
+==================================================================
+# Scatter plot
+plt.scatter(gdp_cap, life_exp)
+
+# Previous customizations
+plt.xscale('log')
+plt.xlabel('GDP per Capita [in USD]')
+plt.ylabel('Life Expectancy [in years]')
+plt.title('World Development in 2007')
+
+# Definition of tick_val and tick_lab
+tick_val = [1000,10000,100000]
+tick_lab = ['1k','10k','100k']
+
+# Adapt the ticks on the x-axis
+plt.xticks(tick_val, tick_lab)
+
+# After customizing, display the plot
+plt.show()
+===================================================================
+# Import numpy as np
+import numpy as np
+
+# Store pop as a numpy array: np_pop
+np_pop = np.array(pop)
+
+# Double np_pop
+np_pop *= 2
+
+# Update: set s argument to np_pop
+plt.scatter(gdp_cap, life_exp, s = np_pop)
+
+# Previous customizations
+plt.xscale('log')
+plt.xlabel('GDP per Capita [in USD]')
+plt.ylabel('Life Expectancy [in years]')
+plt.title('World Development in 2007')
+plt.xticks([1000, 10000, 100000],['1k', '10k', '100k'])
+
+# Display the plot
+plt.show()
