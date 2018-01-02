@@ -3,6 +3,8 @@
 
 **/*.pyc
 **/.vagrant
+**/.ipynb_*/
+**/*.log
 
 **/.DS_Store
 **/Thumbs.db
