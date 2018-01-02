@@ -81,7 +81,6 @@ Vagrant.configure(2) do |config|
     pip3 install pandas && \
     pip3 install pandas_datareader && \
     pip3 install matplotlib && \
-    pip3 install finsymbols && \
     pip3 install ipython && \
     pip3 install jupyter
   SHELL
