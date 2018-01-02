@@ -1,6 +1,11 @@
 ## Overview
 Learning python pandas for stock analysis
 
+## Useful Commands
+* Run python scripts in ipython console
+ ```
+  %run example.py
+ ```
 ## Running Project
 * Start vagrant
  ```
@@ -26,5 +31,5 @@ Learning python pandas for stock analysis
 
 * To run python script in ipython console
   ```
-    %run example.py
+    
   ```
